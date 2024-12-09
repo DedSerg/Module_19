@@ -17,6 +17,6 @@ game3 = Game.objects.create(title='Бэнг!', cost=40.00, size=3.0, description
 first_buyer = Buyer.objects.get(age__lt=18)
 second_buyer, third_buyer = Buyer.objects.filter(age__gt=18)
 
-Game.objects.get(id=10).buyer.set((third_buyer, second_buyer, first_buyer))
-Game.objects.get(id=11).buyer.set((second_buyer, third_buyer))
-Game.objects.get(id=12).buyer.set([third_buyer])
+Game.objects.get(id=1).buyer.set((third_buyer, second_buyer, first_buyer))
+Game.objects.get(id=2).buyer.set((second_buyer, third_buyer))
+Game.objects.get(id=3).buyer.set([third_buyer])
